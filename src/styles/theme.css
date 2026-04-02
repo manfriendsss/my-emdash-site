@@ -12,27 +12,30 @@
 */
 
 :root {
-	/* --- Colors ---
-	--color-bg: #ffffff;
-	--color-bg-subtle: #fafafa;
-	--color-text: #1a1a1a;
-	--color-text-secondary: #525252;
-	--color-muted: #8b8b8b;
-	--color-border: #e5e5e5;
-	--color-border-subtle: #f0f0f0;
-	--color-surface: #f7f7f7;
-	--color-accent: #0066cc;
-	--color-accent-hover: #0052a3;
-	--color-on-accent: white;
+	/* --- LUXOR Color Spectrum (Etoupe) --- */
+	--color-bg: #fff8f4;              /* Surface */
+	--color-bg-subtle: #fff1e5;       /* Surface Container Low */
+	--color-text: #221a12;            /* On Background */
+	--color-text-secondary: #4c463f;   /* On Surface Variant */
+	--color-muted: #8b837b;
+	--color-border: #cfc5bb33;        /* 20% opacity outline fallback */
+	--color-border-subtle: #efe0d2;   /* Surface Container Highest */
+	--color-surface: #fbebdd;         /* Surface Container */
+	--color-accent: #655a4f;          /* Primary (Etoupe) */
+	--color-accent-hover: #7e7367;    /* Primary Container */
+	--color-on-accent: #ffffff;
 	--color-accent-ring: color-mix(in srgb, var(--color-accent) 25%, transparent);
-	*/
+	
+	/* LUXOR Signature Blue (CTA Only) */
+	--color-cta: #006494;             /* Secondary */
+	--color-cta-hover: #005077;
 
-	/* --- Fonts ---
-	--font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-	--font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
-	*/
+	/* --- Fonts --- */
+	--font-serif: 'Noto Serif', serif;
+	--font-sans: 'Manrope', sans-serif;
+	--font-mono: 'JetBrains Mono', monospace;
 
-	/* --- Type scale ---
+	/* --- Type scale --- */
 	--font-size-xs: 0.8125rem;
 	--font-size-sm: 0.875rem;
 	--font-size-base: 1rem;
@@ -40,71 +43,59 @@
 	--font-size-xl: 1.25rem;
 	--font-size-2xl: 1.5rem;
 	--font-size-3xl: 2rem;
-	--font-size-4xl: 2.5rem;
+	--font-size-4xl: 2.75rem;
 	--font-size-5xl: 3.5rem;
-	*/
 
-	/* --- Line heights ---
+	/* --- Line heights --- */
 	--leading-tight: 1.15;
 	--leading-snug: 1.3;
 	--leading-normal: 1.5;
 	--leading-relaxed: 1.7;
-	*/
 
-	/* --- Letter spacing ---
-	--tracking-tight: -0.03em;    used on h1 and large titles
-	--tracking-snug: -0.02em;     used on h2–h6, site/card titles
-	--tracking-wide: 0.06em;      used on meta labels, TOC/widget titles
-	--tracking-wider: 0.08em;     used on footer headings, section labels
-	*/
+	/* --- Letter spacing --- */
+	--tracking-tight: -0.02em;    /* Display & Headlines */
+	--tracking-snug: -0.01em;     /* Titles */
+	--tracking-wide: 0.04em;      /* Labels */
+	--tracking-wider: 0.06em;
 
-	/* --- Spacing ---
+	/* --- Spacing (Generous Luxury) --- */
 	--spacing-1: 0.25rem;
 	--spacing-2: 0.5rem;
 	--spacing-3: 0.75rem;
 	--spacing-4: 1rem;
-	--spacing-5: 1.25rem;
-	--spacing-6: 1.5rem;
-	--spacing-8: 2rem;
-	--spacing-10: 2.5rem;
-	--spacing-12: 3rem;
-	--spacing-16: 4rem;
-	--spacing-20: 5rem;
-	--spacing-24: 6rem;
-	*/
+	--spacing-5: 1.7rem;          /* Inset padding */
+	--spacing-6: 2rem;
+	--spacing-8: 2.75rem;         /* Rule: separate list items */
+	--spacing-10: 3.5rem;
+	--spacing-12: 4rem;
+	--spacing-16: 5.5rem;
+	--spacing-20: 7rem;           /* Luxury spacing between sections */
+	--spacing-24: 9rem;
 
-	/* --- Layout ---
-	--content-width: 680px;       article/page body column width
-	--wide-width: 1200px;         max container width (home, archives)
-	--gutter-width: 200px;        right sidebar column (TOC) on article pages
-	--meta-col-width: 180px;      left meta column on article pages
-	--nav-height: 64px;           sticky header height
-	--search-input-width: 180px;  nav search box width
-	*/
+	/* --- Layout --- */
+	--content-width: 720px;
+	--wide-width: 1280px;
+	--gutter-width: 240px;
+	--meta-col-width: 200px;
+	--nav-height: 80px;
+	--search-input-width: 220px;
 
-	/* --- Borders & radius ---
-	--radius: 4px;
-	--radius-lg: 8px;
-	*/
+	/* --- Borders & radius (Soft Luxury Geometry) --- */
+	--radius: 8px;
+	--radius-lg: 2rem;            /* Default for cards/images */
+	--radius-xl: 3rem;            /* Large editorial frames */
 
-	/* --- Transitions ---
-	--transition-fast: 120ms ease;
-	--transition-base: 180ms ease;
-	*/
+	/* --- Transitions --- */
+	--transition-fast: 150ms ease;
+	--transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-	/* --- Avatars ---
-	--avatar-size-xs: 18px;    card byline avatars
-	--avatar-size-sm: 20px;    post list byline avatars
-	--avatar-size-md: 24px;    featured post byline avatars
-	--avatar-size-lg: 32px;    single post byline avatars
-	*/
+	/* --- Avatars --- */
+	--avatar-size-xs: 20px;
+	--avatar-size-sm: 24px;
+	--avatar-size-md: 32px;
+	--avatar-size-lg: 40px;
 
-	/* --- Shadows ---
-	--shadow-dropdown: 0 8px 30px rgba(0, 0, 0, 0.12);
-	--shadow-btn-active: 0 1px 2px rgba(0, 0, 0, 0.05);
-	*/
-
-	/* --- Misc ---
-	--tag-padding-y: 2px;    vertical padding on tag pills
-	*/
+	/* --- Shadows (Ambient Depth) --- */
+	--shadow-ambient: 0 8px 32px rgba(34, 26, 18, 0.04);
+	--shadow-dropdown: 0 12px 40px rgba(34, 26, 18, 0.08);
 }
