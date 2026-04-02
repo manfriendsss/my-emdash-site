@@ -9,15 +9,22 @@
 	"d1_databases": [
 		{
 			"binding": "DB",
-			"database_name": "my-emdash-site","database_id": "aff4408c-d22c-4856-a236-750c2e5b0766",
-			// Run `wrangler d1 create my-emdash-site` and paste the ID here
-		},
+			"database_name": "my-emdash-site",
+			"database_id": "aff4408c-d22c-4856-a236-750c2e5b0766"
+		}
 	],
 	"r2_buckets": [
 		{
 			"binding": "MEDIA",
-			"bucket_name": "my-emdash-media","preview_bucket_name": "my-emdash-media",
-		},
+			"bucket_name": "my-emdash-media",
+			"preview_bucket_name": "my-emdash-media"
+		}
+	],
+	"kv_namespaces": [
+		{
+			"binding": "SESSION",
+			"id": "b9300e344ae548bd89272121843a858b"
+		}
 	],
 	"observability": {
 		"enabled": true,
